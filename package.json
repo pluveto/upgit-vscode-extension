@@ -2,7 +2,7 @@
   "name": "upgit",
   "displayName": "Upgit",
   "description": "Upload and insert clipboard image into document with upgit uploader",
-  "version": "1.4.14",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/pluveto/upgit-vscode-extension"
