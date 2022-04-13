@@ -38,10 +38,10 @@ Press F1 to search `>Settings UI` and set `upgit.upgitPath` to your `upgit` inst
 >{
 >  "upgitPath": "C:\\Users\\pluveto\\AppData\\Local\\upgit\\upgit.exe",
 >  "upgitArgs": {
->   "": ":clipboard",
->   "--output-type": "stdout",
->   "--output-format": "markdown"
-> }
+>     "": ":clipboard",
+>     "--output-type": "stdout",
+>     "--output-format": "markdown"
+>  }
 >}
 >```
 
