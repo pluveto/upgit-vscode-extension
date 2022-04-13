@@ -43,6 +43,8 @@
 >}
 >```
 
+然后在编辑文档时，按 F1，调出 `Upgit: Upload clipboard image and insert into document` 命令实现上传剪贴板图像
+
 ## 命令
 
 可向命令绑定快捷键，从而更方便使用。

@@ -26,8 +26,6 @@ First, make sure you have installed and configured Upgit program. See [pluveto/u
 
 Search `upgit` in VSCode extension market, install and enable.
 
-在 VSCode 扩展市场搜索 `upgit`，安装并启用。
-
 Press F1 to search `>Settings UI` and set `upgit.upgitPath` to your `upgit` installation path.
 
 ![upgit_20220413_1649824782.png](https://cdn.jsdelivr.net/gh/pluveto/0images@master/2022/04/upgit_20220413_1649824782.png)
@@ -44,6 +42,8 @@ Press F1 to search `>Settings UI` and set `upgit.upgitPath` to your `upgit` inst
 >  }
 >}
 >```
+
+When editing document, press F1 to search `Upgit: Upload clipboard image and insert into document` and excute it.
 
 ## Commands
 
