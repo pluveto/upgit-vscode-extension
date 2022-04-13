@@ -1,5 +1,7 @@
 # Upgit for VSCode
 
+[简体中文](./README.zh-CN.md) | [English](./README.md)
+
 Upload images from clipboard to remote and insert into document.
 
 Backend [pluveto/upgit: Another Typora image uploader](https://github.com/pluveto/upgit) supports multiple upload methods:
