@@ -1,0 +1,83 @@
+{
+  "name": "upgit",
+  "displayName": "Upgit",
+  "description": "Upload and insert clipboard image into document with upgit uploader",
+  "version": "1.4.14",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pluveto/upgit-vscode-extension"
+  },
+  "publisher": "Zhang Zijing (Pluveto)",
+  "keywords": [
+    "upgit",
+    "image",
+    "insert",
+    "upload",
+    "markdown"
+  ],
+  "icon": "images/logo.png",
+  "homepage": "https://github.com/pluveto/upgit-vscode-extension/blob/master/README.md",
+  "bugs": {
+    "url": "https://github.com/pluveto/upgit-vscode-extension/issues"
+  },
+  "engines": {
+    "vscode": "^1.43.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.upgit.upload-clipboard-image",
+        "title": "Upgit: Upload clipboard image and insert into document"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.upgit.upload-clipboard-image",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "upgit configuration",
+      "properties": {
+        "upgit.upgitPath": {
+          "type": "string",
+          "default": "",
+          "description": "Upgit 二进制文件的位置"
+        },
+        "upgit.upgitArgs": {
+          "type": "string",
+          "default": {},
+          "description": "Upgit 额外参数"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint src --ext ts",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.43.0",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "eslint": "^6.8.0",
+    "glob": "^7.1.6",
+    "typescript": "^3.7.5",
+    "vscode-test": "^1.3.0"
+  },
+  "dependencies": {}
+}
